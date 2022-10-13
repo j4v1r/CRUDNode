@@ -367,7 +367,7 @@ app.get('/mandarAUpdate', (req, res) => {
 
     var userHTML = ``
     var i = 0
-    console.log(respuesta.id_cproducto)
+    console.log("El id_cproducto es" + respuesta.id_cproducto)
     respuesta.forEach(respuesta => {
       i++
       userHTML += `
@@ -588,8 +588,8 @@ app.post('/updateProducto', (req, res) => {
   let nombre = req.body.nombre
   let ano = parseInt(req.body.ano)
   let calificacion = parseFloat(req.body.calificacion)
-  let id_edoproducto = req.body.producto_tipo
-  let id_cproducto = req.body.producto_estado
+  let id_edoproducto = req.body.producto_estado
+  let id_cproducto = req.body.producto_tipo
   let id_producto =  req.body.producto_id
 
 
