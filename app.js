@@ -367,7 +367,7 @@ app.get('/mandarAUpdate', (req, res) => {
 
     var userHTML = ``
     var i = 0
-    console.log(respuesta)
+    console.log(respuesta.id_cproducto)
     respuesta.forEach(respuesta => {
       i++
       userHTML += `
